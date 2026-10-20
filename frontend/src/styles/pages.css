@@ -1,0 +1,102 @@
+.form-stack { display: flex; flex-direction: column; gap: 15px; }
+.form-stack .modal-actions { margin-top: 4px; }
+.form-field textarea {
+  width: 100%;
+  padding: 10px 11px;
+  resize: vertical;
+  border: 1px solid #e8e6f0;
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 11px;
+}
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pagination > span:not(.pagination-current) { color: #9995aa; font-size: 10px; }
+.plan-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; gap: 17px; }
+.plan-card {
+  position: relative;
+  padding: 22px;
+  border: 1px solid #eeedf4;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 16px #30245105;
+}
+.plan-card-featured { border-color: #cfc3ff; box-shadow: 0 10px 30px #7557f614; }
+.plan-featured-label { position: absolute; top: -10px; right: 19px; padding: 5px 8px; border-radius: 5px; background: var(--purple); color: #fff; font-size: 8px; font-weight: 800; letter-spacing: .7px; }
+.plan-card-top { display: flex; align-items: center; justify-content: space-between; }
+.plan-card-actions { display: flex; gap: 2px; }
+.plan-card h2, .help-panel h2, .settings-section h2 { margin: 17px 0 5px; font-family: "Plus Jakarta Sans", sans-serif; font-size: 17px; letter-spacing: -.5px; }
+.plan-description { min-height: 34px; margin: 0; color: #918da2; font-size: 11px; line-height: 1.6; }
+.plan-price { margin-top: 18px; font-family: "Plus Jakarta Sans", sans-serif; font-size: 30px; font-weight: 800; letter-spacing: -1px; }
+.plan-price span { color: #9a96aa; font-family: "DM Sans", sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0; }
+.annual-price { margin: 3px 0 15px; color: #9995aa; font-size: 10px; }
+.plan-subscriber-count { padding: 11px 0; border-top: 1px solid #f0eef5; border-bottom: 1px solid #f0eef5; color: #918da2; font-size: 10px; }
+.plan-subscriber-count strong { color: var(--ink); }
+.plan-card ul { display: flex; min-height: 100px; flex-direction: column; gap: 12px; padding: 17px 0; margin: 0; list-style: none; }
+.plan-card li { display: flex; align-items: center; gap: 8px; color: #615d72; font-size: 10px; }
+.plan-card li svg { flex-shrink: 0; color: #68a93f; }
+.full-width { width: 100%; }
+.plan-editor { max-height: min(88vh, 780px); overflow-y: auto; }
+.checkbox-field { display: flex; align-items: center; gap: 8px; color: #68647b; font-size: 11px; }
+.invoice-info { display: grid; grid-template-columns: 1fr 1.3fr; gap: 13px; padding: 18px 0; color: #9894a8; font-size: 11px; }
+.invoice-info strong { color: #4d4960; font-weight: 600; }
+.invoice-total { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-top: 1px solid #efedf4; border-bottom: 1px solid #efedf4; color: #807c91; font-size: 12px; }
+.invoice-total strong { color: var(--ink); font-family: "Plus Jakarta Sans", sans-serif; font-size: 20px; }
+.invoice-detail > .button-text { margin-top: 12px; }
+.status-paid { background: #eaf8ed; color: #3c9954; }
+.status-open { background: #f0edff; color: #7657e9; }
+.status-overdue { background: #fff0e8; color: #d47c49; }
+.status-void, .status-inactive { background: #f1eff5; color: #888398; }
+.date-range { min-width: 125px; min-height: 38px; }
+.analytics-page-charts { margin: 18px 0; }
+.growth-breakdown { display: flex; flex-direction: column; gap: 18px; padding: 3px 21px 22px; }
+.growth-row { display: grid; grid-template-columns: 90px minmax(100px, 1fr) 36px; align-items: center; gap: 12px; color: #817d92; font-size: 11px; }
+.growth-row > strong { color: var(--ink); text-align: right; }
+.growth-track { height: 8px; overflow: hidden; border-radius: 9px; background: #f2f0f7; }
+.growth-track > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #7557f6, #b6ef67); }
+.settings-form { display: flex; max-width: 820px; flex-direction: column; gap: 16px; }
+.settings-section { padding: 21px; }
+.settings-section-heading { margin-bottom: 19px; }
+.settings-section-heading h2 { margin-top: 0; }
+.settings-section > .form-field { max-width: 520px; margin-bottom: 15px; }
+.settings-section > .form-field:last-child { margin-bottom: 0; }
+.toggle-row { display: flex; align-items: center; justify-content: space-between; gap: 15px; padding: 13px 0; border-top: 1px solid #f1eff6; }
+.toggle-row > span { display: flex; flex-direction: column; gap: 4px; }
+.toggle-row strong { color: #514d63; font-size: 11px; }
+.toggle-row small { color: #9692a6; font-size: 10px; }
+.toggle-row input { width: 17px; height: 17px; accent-color: var(--purple); }
+.settings-actions { display: flex; justify-content: flex-end; gap: 9px; padding-bottom: 16px; }
+.help-intro { display: flex; align-items: center; gap: 14px; padding: 18px; margin-bottom: 17px; border: 1px solid #e6defe; border-radius: 13px; background: linear-gradient(100deg, #f2eeff, #fff); }
+.help-intro-icon, .help-contact-icon { display: grid; flex-shrink: 0; place-items: center; width: 42px; height: 42px; border-radius: 11px; background: #e7e0ff; color: var(--purple); }
+.help-intro > div:nth-child(2) { flex: 1; }
+.help-intro strong { color: #464157; font-size: 12px; }
+.help-intro p { margin: 4px 0 0; color: #918da2; font-size: 10px; }
+.help-intro .search-control { width: min(270px, 40%); }
+.help-grid { display: grid; grid-template-columns: 1.1fr .9fr; align-items: start; gap: 17px; }
+.help-panel { padding: 21px; }
+.help-panel h2 { margin-top: 8px; }
+.faq-list { margin-top: 17px; }
+.faq-list details { border-top: 1px solid #f0eef5; }
+.faq-list summary { position: relative; padding: 14px 22px 14px 0; color: #57536a; cursor: pointer; font-size: 11px; font-weight: 700; list-style: none; }
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: "+"; position: absolute; right: 2px; color: var(--purple); font-size: 16px; }
+.faq-list details[open] summary::after { content: "−"; }
+.faq-list details p { margin: 0; padding: 0 0 15px; color: #918da2; font-size: 10px; line-height: 1.7; }
+.help-contact-icon { margin-bottom: 16px; }
+html[data-appearance="comfortable"] .metric-card { min-height: 170px; padding: 23px 21px 29px; }
+html[data-appearance="comfortable"] .panel { border-radius: 16px; }
+html[data-appearance="comfortable"] .subscriptions-table td { padding-top: 16px; padding-bottom: 16px; }
+html[data-appearance="comfortable"] .settings-section,
+html[data-appearance="comfortable"] .help-panel { padding: 26px; }
+
+@media (max-width: 900px) {
+  .plan-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .help-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .plan-cards { grid-template-columns: 1fr; gap: 16px; }
+  .help-intro { align-items: flex-start; flex-wrap: wrap; }
+  .help-intro .search-control { width: 100%; }
+  .form-grid { grid-template-columns: 1fr; }
+  .table-footer { align-items: flex-start; flex-direction: column; }
+}
